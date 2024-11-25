@@ -45,6 +45,13 @@
     letter-spacing: 0.28px;
     padding-bottom: 32px;
     transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        fill: $color-accent;
+        cursor: pointer;
+    }
 }
 
 .header-link {
@@ -58,15 +65,13 @@
     align-items: center;
     gap: 10px;
     transition: fill, color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header-page:hover,
-.header-page:focus,
-.header-link:hover,
-.header-link:focus {
-    color: $color-accent;
-    fill: $color-accent;
-    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        fill: $color-accent;
+        cursor: pointer;
+    }
 }
 
 .header-page::after,
@@ -82,6 +87,7 @@
     background-color: var($color-accent);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .header-page:hover::after,
 .header-page:focus::after {
     opacity: 1;
