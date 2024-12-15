@@ -23,6 +23,12 @@
 .footer-group {
     margin-top: 20px;
 }
+.footer-tablet-pos {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 
 .footer-contacts {
     display: flex;

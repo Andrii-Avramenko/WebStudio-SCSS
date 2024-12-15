@@ -30,6 +30,11 @@
                     <li class="header-item"><a href="#footer" class="header-page">Контакти</a></li>
                 </ul>
             </nav>
+            <button type="button" class="js-open-menu">
+                <svg width="40px" height="40px">
+                    <use href="./image/svg/symbol-defs.svg#open-menu"></use>
+                </svg>
+            </button>
             <ul class="header-contacts">
                 <li class="header-contact">
                     <a class="header-link" href="mailto:info@devstudio.com">
@@ -49,12 +54,12 @@
         </div>
     </header> -->
     <main>
-        <section class="hero">
+        <!-- <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="features">
             <div class="container">
                 <h2 class="features-heading is-hidden">Особливості</h2>
@@ -81,7 +86,7 @@
                 </ul>
             </div>
         </section> -->
-        <section class="work">
+        <!-- <section class="work">
             <div class="container">
                 <h2 class="work-heading">Чим ми займаємося</h2>
                 <ul class="work-list">
@@ -105,7 +110,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <section class="team">
             <div class="container">
                 <h2 class="team-heading">Наша команда</h2>
@@ -305,59 +310,62 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="footer" id="footer">
         <div class="container footer-container">
-            <a href="./index.html" class="footer-logo">
-                Web<span class="footer-accent">studio</span>
-            </a>
             <div class="footer-group">
-                <address class="footer-address">
-                    <ul class="footer-contacts">
-                        <li class="footer-item"><a href="https://maps.app.goo.gl/okL4eE9yYccx8SxA8"
-                                class="footer-map">м.
-                                Київ, пр-т Лесі
-                                Українки, 26</a></li>
-                        <li class="footer-item"><a href="mailto:info@devstudio.com"
-                                class="footer-email">info@devstudio.com</a>
-                        </li>
-                        <li class="footer-item"><a href="tel:+380921111111" class="footer-phone">+380 92 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-                <div class="footer-socials">
-                    <p class="footer-text">Приєднуйтесь</p>
-                    <ul class="footer-list">
-                        <li class="footer-social">
-                            <a href="https://www.instagram.com/" target="_blank" class="footer-link">
-                                <svg width="20" height="20">
-                                    <use href="./image/svg/symbol-defs.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social">
-                            <a href="https://x.com/home" target="_blank" class="footer-link">
-                                <svg width="20" height="20">
-                                    <use href="./image/svg/symbol-defs.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social">
-                            <a href="https://www.facebook.com/" target="_blank" class="footer-link">
-                                <svg width="20" height="20">
-                                    <use href="./image/svg/symbol-defs.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social">
-                            <a href="https://www.linkedin.com" target="_blank" class="footer-link">
-                                <svg width="20" height="20">
-                                    <use href="./image/svg/symbol-defs.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="footer-tablet-pos">
+                    <address class="footer-address">
+                        <a href="./index.html" class="footer-logo">
+                            Web<span class="footer-accent">studio</span>
+                        </a>
+                        <ul class="footer-contacts">
+                            <li class="footer-item"><a href="https://maps.app.goo.gl/okL4eE9yYccx8SxA8"
+                                    class="footer-map">м.
+                                    Київ, пр-т Лесі
+                                    Українки, 26</a></li>
+                            <li class="footer-item"><a href="mailto:info@devstudio.com"
+                                    class="footer-email">info@devstudio.com</a>
+                            </li>
+                            <li class="footer-item"><a href="tel:+380921111111" class="footer-phone">+380 92 111 11
+                                    11</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <div class="footer-socials">
+                        <p class="footer-text">Приєднуйтесь</p>
+                        <ul class="footer-list">
+                            <li class="footer-social">
+                                <a href="https://www.instagram.com/" target="_blank" class="footer-link">
+                                    <svg width="20" height="20">
+                                        <use href="./image/svg/symbol-defs.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social">
+                                <a href="https://x.com/home" target="_blank" class="footer-link">
+                                    <svg width="20" height="20">
+                                        <use href="./image/svg/symbol-defs.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social">
+                                <a href="https://www.facebook.com/" target="_blank" class="footer-link">
+                                    <svg width="20" height="20">
+                                        <use href="./image/svg/symbol-defs.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-social">
+                                <a href="https://www.linkedin.com" target="_blank" class="footer-link">
+                                    <svg width="20" height="20">
+                                        <use href="./image/svg/symbol-defs.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-signup">
                     <p class="footer-label">Підпишіться на розсилку</p>
@@ -368,8 +376,8 @@
                         </button>
                     </form>
                 </div>
+
             </div>
-        </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
@@ -398,6 +406,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script> -->
 </body>
 
 </html>
