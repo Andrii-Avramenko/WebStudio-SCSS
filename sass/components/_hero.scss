@@ -6,6 +6,10 @@
         url(../image/hero-background.jpg);
     color: $white-color;
     text-align: center;
+    padding: 118px 0;
+    @media screen and (min-width: $desktop) {
+        padding: 200px 0;
+    }
 }
 
 .hero-container {
@@ -17,24 +21,34 @@
 
 .hero-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.6;
     max-width: 696px;
-    letter-spacing: 2.64px;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+       font-size: 44px;
+       line-height: 1.4;
+       letter-spacing: 2.64px;
+    }
 }
 
 .hero-button {
     background-color: rgb(33, 150, 243);
     color: $white-color;
-    font-size: medium;
+    font-size: 16px;
     border: 0;
-    padding: 10px 32px;
+    padding: 10px 24px;
     line-height: 1.9;
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @media screen and (min-width: $desktop) {
+       padding: 10px 32px;
+    }
 
     &:hover,
     &:focus {

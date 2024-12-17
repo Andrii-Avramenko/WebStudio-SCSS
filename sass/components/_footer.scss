@@ -5,18 +5,11 @@
 
 // logo
 .footer-logo {
-    display: block;
-    text-align: center;
-    font-family: $secondaryFont;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.4;
-    letter-spacing: 0.72px;
-    color: $color-accent;
+    @extend %logo;
 }
 
 .footer-accent {
-    color: $white-color;
+    color: $color-accent
 }
 
 // contacts

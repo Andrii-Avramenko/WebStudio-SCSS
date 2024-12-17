@@ -1,23 +1,20 @@
+.features {
+    padding: 60px 0;
+    @media screen and (min-width: $tablet) {
+      padding: 94px 0;
+    }
+}
+
 .features-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 .features-item {
-    max-width: 270px;
-}
-
-.features-item::before {
-    content: '';
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: var(--third-bg-color);
-    background-position: center;
-    margin-bottom: 30px;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc((100% - 30px) /2 );
+    }
 }
 
 .features-item:nth-child(1)::before {
@@ -44,7 +41,7 @@
 }
 
 .features-text {
-    color: var(--text-grey-color);
+    color: $text-grey-color;
     line-height: 1.7;
     letter-spacing: 0.42px;
 }

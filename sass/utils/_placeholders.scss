@@ -1,0 +1,14 @@
+%logo {
+    display: block;
+    text-align: center;
+    font-family: $secondaryFont;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.72px;
+    color: $color-accent;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 26px;
+    }
+}
