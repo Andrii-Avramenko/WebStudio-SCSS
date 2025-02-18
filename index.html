@@ -62,13 +62,15 @@
                 <ul class="mobmenu-list">
                     <li class="mobmenu-item"><a href="./index.html" class="mobmenu-link">Студія</a></li>
                     <li class="mobmenu-item"><a href="./portfolio.html" class="mobmenu-link">Портфоліо</a></li>
-                    <li class="mobmenu-item"><a href="#footer" class="mobmenu-link" onclick="window.location.reload(true);">Контакти</a></li>
+                    <li class="mobmenu-item"><a href="#footer" class="mobmenu-link"
+                            onclick="window.location.reload(true);">Контакти</a></li>
                     <!-- Я додав джава скрипт тому що не знайшов інший варіант як закрити вікно -->
                 </ul>
             </nav>
             <address class="mobmenu-address">
                 <ul class="mobmenu-contacts">
-                    <li class="mobmenu-contact"><a href="tel:+380 92 111 11 11" class="mobmenu-link mobmenu-phone">+380 92 111 11
+                    <li class="mobmenu-contact"><a href="tel:+380 92 111 11 11" class="mobmenu-link mobmenu-phone">+380
+                            92 111 11
                             11</a></li>
                     <li class="mobmenu-contact"><a href="mailto:info@devstudio.com"
                             class="mobmenu-link mobmenu-email">info@devstudio.com</a></li>
@@ -146,10 +148,19 @@
                 <ul class="team-list">
                     <li class="team-card">
                         <picture>
-                            <source>
-                            <source>
-                            <source>
-                            <img src="./image/Team/igordemyanenko.jpg" alt="Фотографія Ігора Дем'яненко" widht="270px"
+                            <source srcset="
+                                ./image/Team/desktop/1x/igor-demyanenko.jpg 1x,
+                                ./image/Team/desktop/2x/igor-demyanenko.jpg  2x
+                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./image/Team/tablet/1x/igor-demyanenko.jpg  1x,
+                                ./image/Team/tablet/2x/igor-demyanenko.jpg  2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./image/Team/mobile/1x/igor-demyanenko.jpg  1x,
+                                ./image/Team/mobile/2x/igor-demyanenko.jpg 2x
+                            " media="(max-width: 767px)" />
+                            <img src="./image/Team/mobile/1x/igor-demyanenko.jpg" alt="Фотографія Дем'яненко Ігора" widht="270px"
                                 height="260px" class="team-img">
                         </picture>
                         <h3 class="team-name">Дем'яненко Ігор</h3>
@@ -186,8 +197,22 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./image/Team/olgarepina.jpg" alt="Фотографія Ольги Рєпіной" widht="270px"
-                            height="260px" class="team-img">
+                        <picture>
+                            <source srcset="
+                                ./image/Team/desktop/1x/olga-repina.jpg 1x,
+                                ./image/Team/desktop/2x/olga-repina.jpg  2x
+                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./image/Team/tablet/1x/olga-repina.jpg  1x,
+                                ./image/Team/tablet/2x/olga-repina.jpg  2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./image/Team/mobile/1x/olga-repina.jpg  1x,
+                                ./image/Team/mobile/2x/olga-repina.jpg 2x
+                            " media="(max-width: 767px)" />
+                            <img src="./image/Team/mobile/1x/olga-repina.jpg" alt="Фотографія Рєпіної Ольги" widht="270px"
+                                height="260px" class="team-img">
+                        </picture>
                         <h3 class="team-name">Рєпіна Ольга</h3>
                         <p class="team-desc">Frontend Developer</p>
                         <ul class="team-socials">
@@ -222,8 +247,22 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./image/Team/mykolatarasov.jpg" alt="Фотографія Миколи Тарасова" widht="270px"
-                            height="260px" class="team-img">
+                        <picture>
+                            <source srcset="
+                                ./image/Team/desktop/1x/mykola-tarasov.jpg 1x,
+                                ./image/Team/desktop/2x/mykola-tarasov.jpg  2x
+                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./image/Team/tablet/1x/mykola-tarasov.jpg  1x,
+                                ./image/Team/tablet/2x/mykola-tarasov.jpg  2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./image/Team/mobile/1x/mykola-tarasov.jpg  1x,
+                                ./image/Team/mobile/2x/mykola-tarasov.jpg 2x
+                            " media="(max-width: 767px)" />
+                            <img src="./image/Team/mobile/1x/mykola-tarasov.jpg" alt="Фотографія Тарасова Миколи" widht="270px"
+                                height="260px" class="team-img">
+                        </picture>
                         <h3 class="team-name">Тарасов Микола</h3>
                         <p class="team-desc">Marketing</p>
                         <ul class="team-socials">
@@ -258,8 +297,22 @@
                         </ul>
                     </li>
                     <li class="team-card">
-                        <img src="./image/Team/myhailoermakov.jpg" alt="Фотографія Михайло Єрмаков" widht="270px"
+                        <picture>
+                            <source srcset="
+                                ./image/Team/desktop/1x/myhailo-ermakov.jpg 1x,
+                                ./image/Team/desktop/2x/myhailo-ermakov.jpg  2x
+                            " media="(min-width: 1200px)" />
+                            <source srcset="
+                                ./image/Team/tablet/1x/myhailo-ermakov.jpg  1x,
+                                ./image/Team/tablet/2x/myhailo-ermakov.jpg  2x
+                            " media="(min-width: 768px)" />
+                            <source srcset="
+                                ./image/Team/mobile/1x/myhailo-ermakov.jpg  1x,
+                                ./image/Team/mobile/2x/myhailo-ermakov.jpg 2x
+                            " media="(max-width: 767px)" />
+                            <img src="./image/Team/mobile/1x/myhailo-ermakov.jpg" alt="Фотографія Єрмакова Михайло" widht="270px"
                             height="260px" class="team-img">
+                        </picture>
                         <h3 class="team-name">Єрмаков Михайло</h3>
                         <p class="team-desc">UI Designer</p>
                         <ul class="team-socials">
