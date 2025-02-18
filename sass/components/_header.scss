@@ -65,7 +65,20 @@
     transition: color, fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (max-width: 1119px) {
-        padding-bottom: 36px;
+        padding-bottom: 37px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        opacity: 0;
+        background-color: $color-accent;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &:hover,
@@ -73,6 +86,10 @@
         color: $color-accent;
         fill: $color-accent;
         cursor: pointer;
+
+        &::after {
+            opacity: 1;
+        }
     }
 }
 
@@ -96,47 +113,20 @@
     }
 }
 
-.header-page::after,
-.header-page::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    opacity: 0;
-    background-color: $color-accent;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-page:hover::after,
-.header-page:focus::after {
-    opacity: 1;
-}
-
 .js-open-menu {
     width: 40px;
-    background-color: $white-color;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     margin-left: auto;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: $color-accent;  
+    }
 
     @media screen and (min-width: $tablet) {
         display: none;
     }
-}
-.menu-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transform: translateX(100%);
-}
-
-.menu-container.is-open {
-    transform: translate(0);
-    opacity: 1;
 }

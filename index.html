@@ -53,26 +53,33 @@
             </ul>
         </div>
         <div class="header-mobmenu js-menu-container">
-            <div class="mobmenu-content">
-                <button type="button" class="mobmenu-close js-close-menu">
-                    <svg>
-                        <use href="./image/svg/symbol-defs.svg#close-button"></use>
-                    </svg>
-                </button>
-                <nav class="mobmenu-nav">
-                    <ul class="mobmenu-list">
-                        <li class="mobmenu-item"><a href="./index.html" class="mobmenu-link">Студія</a></li>
-                        <li class="mobmenu-item"><a href="./portfolio.html" class="mobmenu-link">Портфоліо</a></li>
-                        <li class="mobmenu-item"><a href="#footer" class="mobmenu-link">Контакти</a></li>
-                    </ul>
-                </nav>
+            <button type="button" class="mobmenu-close js-close-menu">
+                <svg>
+                    <use href="./image/svg/symbol-defs.svg#close-button"></use>
+                </svg>
+            </button>
+            <nav class="mobmenu-nav">
+                <ul class="mobmenu-list">
+                    <li class="mobmenu-item"><a href="./index.html" class="mobmenu-link">Студія</a></li>
+                    <li class="mobmenu-item"><a href="./portfolio.html" class="mobmenu-link">Портфоліо</a></li>
+                    <li class="mobmenu-item"><a href="#footer" class="mobmenu-link" onclick="window.location.reload(true);">Контакти</a></li>
+                    <!-- Я додав джава скрипт тому що не знайшов інший варіант як закрити вікно -->
+                </ul>
+            </nav>
+            <address class="mobmenu-address">
                 <ul class="mobmenu-contacts">
-                    <li class="mobmenu-contact"><a href="tel:+380 92 111 11 11" class="mobmenu-link">+380 92 111 11
+                    <li class="mobmenu-contact"><a href="tel:+380 92 111 11 11" class="mobmenu-link mobmenu-phone">+380 92 111 11
                             11</a></li>
                     <li class="mobmenu-contact"><a href="mailto:info@devstudio.com"
                             class="mobmenu-link mobmenu-email">info@devstudio.com</a></li>
                 </ul>
-            </div>
+                <ul class="mobmenu-socials">
+                    <li class="mobmenu-social"><a href="">Instagram</a></li>
+                    <li class="mobmenu-social"><a href="">Twitter</a></li>
+                    <li class="mobmenu-social"><a href="">Facebook</a></li>
+                    <li class="mobmenu-social"><a href="">Linkedin</a></li>
+                </ul>
+            </address>
         </div>
     </header>
     <main>
@@ -433,6 +440,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 
