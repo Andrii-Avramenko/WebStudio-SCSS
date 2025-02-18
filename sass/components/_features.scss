@@ -6,32 +6,16 @@
 }
 
 .features-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (max-width: 1199px) {
+        flex-wrap: wrap;
+    }
 }
 
 .features-item {
     @media screen and (min-width: $tablet) {
         flex-basis: calc((100% - 30px) /2 );
     }
-}
-
-.features-item:nth-child(1)::before {
-    background-image: url(../image/svg/features-icons.svg#antenna);
-}
-
-.features-item:nth-child(2)::before {
-    background-image: url(../image/svg/features-icons.svg#clock);
-}
-
-.features-item:nth-child(3)::before {
-    background-image: url(../image/svg/features-icons.svg#diagram);
-}
-
-.features-item:nth-child(4)::before {
-    background-image: url(../image/svg/features-icons.svg#astronaut);
-}
+}   
 
 .features-subtitle {
     color: initial;

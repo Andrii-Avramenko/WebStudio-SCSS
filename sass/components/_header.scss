@@ -10,17 +10,25 @@
 .header-container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+    }
 }
 
 .header-logo {
     @extend %logo;
+    color: #000;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 87px;
+    }
+    @media screen and (min-width: $desktop) {
+        margin-right: 93px;
+    }
 }
 .header-accent {
     color: $color-accent;
-}
-.header-logo {
-    color: #000;
-    margin-right: 93px;
 }
 
 .header-contacts {

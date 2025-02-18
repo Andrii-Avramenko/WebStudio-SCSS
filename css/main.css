@@ -4,6 +4,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 700;
+  font-style: normal;
   line-height: 1.4;
   letter-spacing: 0.72px;
   color: #2196F3;
@@ -106,14 +107,30 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
-
-.header-accent {
-  color: #2196F3;
+@media screen and (max-width: 767px) {
+  .header-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .header-logo {
   color: #000;
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .header-logo {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    margin-right: 93px;
+  }
+}
+
+.header-accent {
+  color: #2196F3;
 }
 
 .header-contacts {
@@ -323,13 +340,11 @@ img {
   }
 }
 
-.features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
+@media screen and (max-width: 1199px) {
+  .features-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -337,22 +352,6 @@ img {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
-}
-
-.features-item:nth-child(1)::before {
-  background-image: url(../image/svg/features-icons.svg#antenna);
-}
-
-.features-item:nth-child(2)::before {
-  background-image: url(../image/svg/features-icons.svg#clock);
-}
-
-.features-item:nth-child(3)::before {
-  background-image: url(../image/svg/features-icons.svg#diagram);
-}
-
-.features-item:nth-child(4)::before {
-  background-image: url(../image/svg/features-icons.svg#astronaut);
 }
 
 .features-subtitle {
@@ -436,11 +435,16 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+@media screen and (max-width: 1199px) {
+  .team-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team-card {
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
   background: #fff;
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
@@ -565,11 +569,18 @@ img {
 }
 
 .footer-accent {
-  color: #2196F3;
+  color: #fff;
 }
 
 .footer-group {
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -594,13 +605,28 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
   gap: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    gap: 9px;
+  }
+}
+
+.footer-item {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-item {
+    text-align: left;
+  }
 }
 
 .footer-map,
 .footer-email,
 .footer-phone {
-  text-align: center;
   opacity: 0.6;
   font-style: normal;
   font-weight: 400;
@@ -615,6 +641,16 @@ img {
 
 .footer-socials {
   margin: 60px 0;
+}
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    margin: 0 86px 0 93px;
+  }
 }
 
 .footer-text {
@@ -637,6 +673,20 @@ img {
           justify-content: center;
 }
 
+.footer-social {
+  max-width: 44px;
+  max-height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-social:hover, .footer-social:focus {
+  background-color: #2196F3;
+}
+
 .footer-label {
   margin-bottom: 20px;
   text-align: center;
@@ -645,6 +695,11 @@ img {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   color: #fff;
+}
+@media screen and (min-width: 1200px) {
+  .footer-label {
+    text-align: left;
+  }
 }
 
 .footer-form {
@@ -659,6 +714,14 @@ img {
       -ms-flex-align: center;
           align-items: center;
   gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .footer-input {
@@ -707,6 +770,11 @@ img {
   letter-spacing: 0.48px;
   color: #fff;
   opacity: 0.6;
+}
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
 }
 
 .footer-send {
