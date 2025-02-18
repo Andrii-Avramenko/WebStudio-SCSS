@@ -845,6 +845,7 @@ img {
   border: 0;
   background-color: #F5F4FA;
   letter-spacing: 0.48px;
+  cursor: pointer;
   -webkit-transition: background-color, color, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
   transition: background-color, color, 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow;
   transition: box-shadow, background-color, color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -852,10 +853,9 @@ img {
 }
 .portfolio-btn:hover, .portfolio-btn:focus {
   background-color: #2196F3;
-  color: var(--white-color);
+  color: #fff;
   -webkit-box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 /* photos */
@@ -869,18 +869,16 @@ img {
 }
 
 .photos-item {
-  border-bottom: 1px solid #EEE;
-  border-left: 1px solid #EEE;
-  border-right: 1px solid #EEE;
+  border: 1px solid #EEE;
+  border-top: 0;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .photos-item {
-    -ms-flex-preferred-size: calc((100% - 111px) / 2);
-        flex-basis: calc((100% - 111px) / 2);
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -888,6 +886,21 @@ img {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
+}
+@media screen and (min-width: 1200px) {
+  .photos-item {
+    -ms-flex-preferred-size: calc((100% - 74px) / 3);
+        flex-basis: calc((100% - 74px) / 3);
+  }
+}
+.photos-item:hover, .photos-item:focus {
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.photos-item:hover .photos-overlay, .photos-item:focus .photos-overlay {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .photos-thumb {
@@ -901,7 +914,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 77px 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(101%);
       -ms-transform: translateY(101%);
@@ -911,6 +924,16 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .photos-overlay {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos-overlay {
+    padding: 63px 24px;
+  }
+}
 
 .photos-overlay p {
   color: #fff;
@@ -918,19 +941,6 @@ img {
   font-style: normal;
   line-height: 1.6;
   letter-spacing: 0.54px;
-}
-
-.photos-item:hover .photos-overlay,
-.photos-item:focus .photos-overlay {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.photos-item:hover,
-.photos-item:focus {
-  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .photos-textbox {
