@@ -6,6 +6,10 @@
 // logo
 .footer-logo {
     @extend %logo;
+    
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
 }
 
 .footer-accent {
