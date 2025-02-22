@@ -85,19 +85,26 @@
     <main>
         <section class="portfolio">
             <div class="container">
-                <ul class="portfolio-btns">
-                    <li class="portfolio-item"><button type="button" class="portfolio-btn">Усі</button></li>
-                    <li class="portfolio-item"><button type="button" class="portfolio-btn">Веб-сайти</button>
+                <!-- <ul class="portfolio-btns" id="photos-item show">
+                    <li class="portfolio-item"><button type="button" class="portfolio-btn active" onclick="filterSelection('all')">Усі</button></li>
+                    <li class="portfolio-item"><button type="button" class="portfolio-btn" onclick="filterSelection('websites')">Веб-сайти</button>
                     </li>
-                    <li class="portfolio-item"><button type="button" class="portfolio-btn">Додатки</button>
+                    <li class="portfolio-item"><button type="button" class="portfolio-btn" onclick="filterSelection('apps')">Додатки</button>
                     </li>
-                    <li class="portfolio-item"><button type="button" class="portfolio-btn">Дизайн</button>
+                    <li class="portfolio-item"><button type="button" class="portfolio-btn" onclick="filterSelection('design')">Дизайн</button>
                     </li>
-                    <li class="portfolio-item"><button type="button" class="portfolio-btn">Маркетинг</button>
+                    <li class="portfolio-item"><button type="button" class="portfolio-btn" onclick="filterSelection('marketing')">Маркетинг</button>
                     </li>
-                </ul>
+                </ul> -->
+                <div class="portfolio-btns" id="photos-buttons">
+                    <button type="button" class="portfolio-btn active" onclick="filterSelection('all')">Усі</button>
+                    <button type="button" class="portfolio-btn" onclick="filterSelection('websites')">Веб-сайти</button>
+                    <button type="button" class="portfolio-btn" onclick="filterSelection('apps')">Додатки</button>
+                    <button type="button" class="portfolio-btn" onclick="filterSelection('design')">Дизайн</button>
+                    <button type="button" class="portfolio-btn" onclick="filterSelection('marketing')">Маркетинг</button>
+                </div>
                 <ul class="photos">
-                    <li class="photos-item">
+                    <li class="photos-item show websites">
                         <a href="#" class="photos-link">
                             <div class="photos-thumb">
                                 <picture>
@@ -131,7 +138,7 @@
                         </a>
 
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show design">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -154,7 +161,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -177,7 +184,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show marketing">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -200,7 +207,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show apps">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -223,7 +230,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show websites">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -246,7 +253,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show design">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -269,7 +276,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show marketing">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -292,7 +299,7 @@
                             </div>
                         </a>
                     </li>
-                    <li class="photos-item">
+                    <li class="photos-item show apps">
                         <a href="#" class="photos-link">
                             <picture>
                                 <source srcset="
@@ -388,6 +395,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/filter.js"></script>
 </body>
 
 </html>
