@@ -2,10 +2,21 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.40),
             rgba(47, 48, 58, 0.40)),
-        url(../image/hero-background.jpg);
+        url(../image/hero/background-1x.jpg);
+    background-size: cover;
     color: $white-color;
     text-align: center;
     padding: 118px 0;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.40),
+        rgba(47, 48, 58, 0.40)),
+        url(../image/hero/background-2x.jpg);
+    }
+
     @media screen and (min-width: $desktop) {
         padding: 200px 0;
     }
@@ -27,17 +38,17 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $desktop) {
-       font-size: 44px;
-       line-height: 1.4;
-       letter-spacing: 2.64px;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 2.64px;
     }
 }
 
 .hero-button {
     padding: 10px 24px;
     @include button;
-    
+
     @media screen and (min-width: $desktop) {
-       padding: 10px 32px;
+        padding: 10px 32px;
     }
 }
