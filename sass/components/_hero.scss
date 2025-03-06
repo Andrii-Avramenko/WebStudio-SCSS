@@ -2,23 +2,50 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.40),
             rgba(47, 48, 58, 0.40)),
-        url(../image/hero/background-1x.jpg);
+        url(../image/hero/1x/hero-mob-background.jpg);
     background-size: cover;
+    background-position: center;
+    background-color: $second-bg-color;
     color: $white-color;
     text-align: center;
     padding: 118px 0;
+
+    @media screen and (min-width: $tablet) {
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.40),
+            rgba(47, 48, 58, 0.40)),
+            url(../image/hero/1x/hero-tab-background.jpg);
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 200px 0;
+        background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.40),
+            rgba(47, 48, 58, 0.40)),
+            url(../image/hero/1x/hero-desk-background.jpg);
+    }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: linear-gradient(to right,
-        rgba(47, 48, 58, 0.40),
-        rgba(47, 48, 58, 0.40)),
-        url(../image/hero/background-2x.jpg);
-    }
+            rgba(47, 48, 58, 0.40),
+            rgba(47, 48, 58, 0.40)),
+            url(../image/hero/2x/hero-mob-background.jpg);
 
-    @media screen and (min-width: $desktop) {
-        padding: 200px 0;
+        @media screen and (min-width: $tablet) {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)),
+                url(../image/hero/2x/hero-tab-background.jpg);
+        }
+
+        @media screen and (min-width: $desktop) {
+            background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.40),
+                rgba(47, 48, 58, 0.40)),
+                url(../image/hero/2x/hero-desk-background.jpg);
+        }
     }
 }
 
